@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "epic-project1-main"
+version = "0.1.0"
+description = ""
+authors = ["Pablo Daniel Rey <pablodanielrey@gmail.com>"]
+readme = "README.md"
+packages = [{include = "epic_project1"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+injector = "^0.20.1"
+epic_project1_domain = { path = "../epic_project1_domain/", develop=true}
+epic_project1_part1 = { path = "../epic_project1_part1/", develop=true}
+epic_project1_part2 = { path = "../epic_project1_part2/", develop=true}
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.0.0"
+black = "^22.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

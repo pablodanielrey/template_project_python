@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "epic-project1-domain"
+version = "0.1.0"
+description = ""
+authors = ["Pablo Daniel Rey <pablo.rey@epicio.com>"]
+readme = "README.md"
+packages = [{include = "epic_project1"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
